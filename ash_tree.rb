@@ -29,7 +29,7 @@ def count_ash_trees(tree_data)
 end
 
 # URL of the subset tree data
-url_subset = 'https://data.winnipeg.ca/resource/d3jk-hb6j.json'
+url_subset = 'https://data.winnipeg.ca/resource/d3jk-hb6j.json?$limit=306000'
 
 # Retrieve tree data from the subset URL
 tree_data = get_tree_data(url_subset)
