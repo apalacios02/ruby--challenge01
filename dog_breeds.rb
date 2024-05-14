@@ -1,3 +1,5 @@
+# Author: Allan Palacios
+
 require 'net/http'
 require 'json'
 
