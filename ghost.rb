@@ -5,31 +5,34 @@ ghosts = [
   {
     name: 'Inky',
     age: 4,
-    interests: 'reindeers',
-    bank_balance: 25.00
+    loves: 'reindeers',
+    net_worth: 25.00
   },
   {
     name: 'Pinky',
     age: 5,
-    interests: 'garden tools',
-    bank_balance: 14.00
+    loves: 'garden tools',
+    net_worth: 14.00
   },
   {
     name: 'Blinky',
     age: 7,
-    interests: 'ninjas',
-    bank_balance: 18.03
+    loves: 'ninjas',
+    net_worth: 18.03
   },
   {
     name: 'Clyde',
     age: 6,
-    interests: 'yarn',
-    bank_balance: 0.00
+    loves: 'yarn',
+    net_worth: 0.00
   }
 ]
 
 # Accessing and printing the 'ghosts' array
-puts "List of ghosts:"
+
 ghosts.each do |ghost|
-  puts "#{ghost[:name]} is #{ghost[:age]} years old, loves #{ghost[:interests]}, and has $#{'%.2f' % ghost[:bank_balance]} in the bank."
+    ghost_info  = "#{ghost[:name]} is #{ghost[:age]} years old, "
+    ghost_info += "loves #{ghost[:loves]} and "
+    ghost_info += "has #{ghost[:net_worth]} dollars in the bank."
+    puts ghost_info
 end
