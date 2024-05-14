@@ -2,6 +2,7 @@
 
 require 'net/http'
 require 'json'
+require 'pp'
 
 def get_dog_breeds
   url = 'https://dog.ceo/api/breeds/list/all'
@@ -22,3 +23,7 @@ def print_dog_breeds(breeds)
     puts "Failed to retrieve dog breeds. Please try again later."
   end
 end
+
+# Main execution
+dog_breeds_data = get_dog_breeds
+print_dog_breeds(dog_breeds_data)
